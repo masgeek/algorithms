@@ -26,23 +26,23 @@ public class BinaryGap {
         }
 
         //convert the number into a decimal and add it it a stack
-        String myStack = "";
+        String binaryString = "";
         while(N>0){
             int binValue = N%2; //divisible by 1? 1 if true 0 if false
             //add above value to stch
             if(binValue==0){
-                myStack = "0"+myStack;
+                binaryString = "0"+binaryString;
             }else{
-                myStack = "1"+myStack;
+                binaryString = "1"+binaryString;
             }
             N = N/2;
         }
 
- System.out.println("My stack value is:"+myStack);
- System.out.println("Binary value is  :"+originalBinary);
+         System.out.println("My stack value is:"+binaryString);
+         System.out.println("Binary value is  :"+originalBinary);
         //next evaluate the occurences of 0
         int tempBinaryGap =0;
-        char[] theValues = myStack.toCharArray();
+        char[] theValues = binaryString.toCharArray();
 
         for(int x=0; x< theValues.length;x++){
             char binaryValue = theValues[x];
