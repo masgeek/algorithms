@@ -25,11 +25,9 @@ public class BinaryGap {
             return 0;
         }
 
-        //convert the number into a decimal and add it it a stack
         String binaryString = "";
         while(N>0){
-            int binValue = N%2; //divisible by 1? 1 if true 0 if false
-            //add above value to stch
+            int binValue = N%2;
             if(binValue==0){
                 binaryString = "0"+binaryString;
             }else{
